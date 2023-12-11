@@ -1,0 +1,35 @@
+body{
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+    background: url(background2.avif);
+    animation: animatebg 5s linear infinite;
+}
+@keyframes animatebg {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.flex-banner {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.flex-item {
+    margin: 0 5px;
+}
+
+.container.col-10>p {
+    text-align: justify;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#mainInputs {
+    background: rgb(2, 53, 129, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}

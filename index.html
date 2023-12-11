@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container col-lg-9 col-10">
+
+        <div class="my-2 text-center">
+            <div class="alert alert-info shadow-sm text-center text-dark fw-bolder fs-3">BUDGET APP</div>
+        </div>
+        <div class="alert alert-success shadow-sm p-2 text-center text-dark fw-bolder">YOUR DAILY BUDGET IS ₦10,000</div>
+        <div class="my-4 shadow p-2 rounded-2" id="mainInputs">
+            <div class="row fw-bold my-3">
+                <p class="col-6" id="showDate"></p>
+                <p class="col-6 text-end" id="showMoney"></p>
+            </div>
+            <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Please fill in the empty space</div>
+            <input type="text" class="form-control my-2" placeholder="Enter item" id="item">
+            <input type="number" class="form-control my-2" placeholder="Enter price (₦)" id="price">
+            <small class="text-center alert alert-danger p-1 my-2" style="display: none;" id="overSpend">maximum amount exceeded</small>
+            <button class="btn btn-success btn-sm w-100" onclick="addBudget()">Add</button>
+            <div class="my-3">
+                <div class="alert alert-info shadow-sm text-center text-dark fw-bolder fs-3">EXPENSES</div>
+
+                <p id="showBudget"></p> 
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
